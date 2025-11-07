@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRONEX Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<svg class="logo" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Erweiterter, verschiebbarer Gradient -->
+    <linearGradient id="flowGradient" x1="-50%" y1="0%" x2="150%" y2="0%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0" />
+      <stop offset="25%" stop-color="#a78bfa" stop-opacity="1" />
+      <stop offset="50%" stop-color="#00d4ff" stop-opacity="1" />
+      <stop offset="75%" stop-color="#a78bfa" stop-opacity="1" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+      <!-- Bewegung des gesamten Gradients -->
+      <animateTransform
+        attributeName="gradientTransform"
+        type="translate"
+        from="-1.2 0" to="1 0"
+        dur="6s"
+        repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+
+  <!-- Basislinie -->
+  <path
+    d="M110,25 L190,75 L190,25 L110,75 L110,25"
+    stroke="#a78bfa"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+    opacity="1"
+  />
+
+  <!-- Fließender Farbverlauf -->
+  <path
+    d="M110,25 L190,75 L190,25 L110,75 L110,25"
+    stroke="url(#flowGradient)"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>
+
+    <div class="typing">
+      <span id="text"></span><span class="cursor">|</span>
+    </div>
+
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>
