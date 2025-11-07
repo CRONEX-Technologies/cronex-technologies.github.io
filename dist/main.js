@@ -8,9 +8,8 @@ function type() {
         setTimeout(type, 120);
     }
 }
-window.onload = () => {
-    // Start typing after logo animation finishes
+document.addEventListener("DOMContentLoaded" () => {
     setTimeout(type, 1500);
-};
+});
 export {};
 //# sourceMappingURL=main.js.map
